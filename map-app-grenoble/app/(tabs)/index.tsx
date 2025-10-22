@@ -1,14 +1,16 @@
 import { StyleSheet, View } from 'react-native';
 import MapView from 'react-native-maps';
+import Constants from 'expo-constants';
 
-export default function App() {
+export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <MapView 
-        style={styles.map} 
+      <MapView
+        style={styles.map}
+        googleMapsApiKey={Constants.expoConfig.extra.googleMapsApiKey}
         initialRegion={{
-          latitude: 45.2566,
-          longitude: 5.7522,
+          latitude: 45.188529,
+          longitude: 5.724524,
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421,
         }}

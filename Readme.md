@@ -6,7 +6,7 @@ est maintenant prête à être "buildée".
 Voici les dernières étapes à suivre :
 
   1. Ajoutez votre clé d'API Google Maps :
-      * Ouvrez le fichier map-teacher-app/app.json.
+      * Ouvrez le fichier map-teacher-app/app.config.js.
       * Remplacez VOTRE_CLE_API_GOOGLE_MAPS_ICI par
         votre véritable clé d'API Google Maps à deux
         endroits (pour iOS et pour Android).
@@ -25,6 +25,10 @@ Voici les dernières étapes à suivre :
         projet.
 
   5. Créez le "Development Build" :
+      * Rajouter une env :
+        ```bash
+        eas env:create
+        ```
       * Exécutez la commande suivante pour la
         plateforme de votre choix (vous pouvez répéter
         l'opération pour l'autre).
